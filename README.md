@@ -1,8 +1,12 @@
 # CFWavPlayer - A CFML wrapper to load and play wav audio files within your application
 
+I don't know why you'd want to use this, but you might do.. because, you know, wav files are cool.
 
-# Create a new player
+## Create a new player
 
+Instantiating a new instance of the `CFWavPlayer` object can be done through the `WavBuilder` factory.
+
+All methods that interact directly with the audio playback and management can be chained.
 
 ```
 <cfscript>
@@ -15,8 +19,9 @@
 </cfscript>
 ```
 
-This will create a new instance of the WavPlayer object, load in a file and play it to the end.
+This above code will create a new instance of the WavPlayer object, load in a file and play it to the end.
 
+You can choose to run an action on the CFWavPlayer instance at a given duration, using the `wait()` method. This is essentially a helper shortcut method to the CFML `sleep()` function.
 
 ```
 player1 = WavBuilder
@@ -26,8 +31,6 @@ player1 = WavBuilder
     .wait( 5000 )
     .stop();
 ```
-
-You can choose to run an action on the CFWavPlayer instance at a given duration, using the `wait()` method. This is essentially a helper shortcut method to the CFML `sleep()` function.
 
 So, in the above example, we load a file, start playing it, and five seconds into it we stop.
 
