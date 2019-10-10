@@ -21,7 +21,7 @@ All methods that interact directly with the audio playback and management can be
 
 This above code will create a new instance of the WavPlayer object, load in a file and play it to the end.
 
-You can choose to run an action on the `CFWavPlayer` instance at a given duration, using the `wait()` method. This is essentially a helper shortcut method to the CFML `sleep()` function.
+You can choose to run an action on the `CFWavPlayer` instance at a given duration using the `wait()` method. This is essentially a helper shortcut method to the CFML `sleep()` function.
 
 ```
 player1 = WavBuilder
@@ -82,8 +82,8 @@ To stop the loop, you would then just need to call:
 player1.stop();
 ```
 
-In this looping example, we can loop over the audio file, which is roughly ten seconds long.
-After 2.5 loops, we can stop it:
+In this looping example we can loop over the audio file which is roughly ten seconds long.
+After 2.5 loops we can stop it:
 
 ```
 player1 = WavBuilder
@@ -113,11 +113,11 @@ In the above example we play the audio for ten seconds then restart it from the 
 
 You can use `CFWavPlayer` to play multiple sounds at once through the browser. Because who doesn't like wav-induced headaches?
 
-Before we play the audio in `player1`, we can get the duration (in microseconds) from the underlying Java Clip instance. We can then convert that duration into milliseconds and pass it into the `wait()` method on `player2`, after which we'll tell it to stop playing.
+Before we play the audio in `player1` we can get the duration (in microseconds) from the underlying Java Clip instance. We can then convert that duration into milliseconds and pass it into the `wait()` method on `player2`, after which we'll tell it to stop playing.
 
 Running this, both sounds will start and end at the same time, the second looping until the first one finishes.
 
-The parallel play doesn't seem work in Lucee (yet), but I have tested it and it is working on Adobe ColdFusion 2018.
+The parallel play doesn't seem work in Lucee (yet) but I have tested it and it is working on Adobe ColdFusion 2018.
 
 ```
 WavBuilder = new com.coldfumonkeh.CFWavPlayer.WavBuilder();
