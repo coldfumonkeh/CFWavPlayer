@@ -107,7 +107,7 @@ player1 = WavBuilder
     .restart();
 ```
 
-In the above example, we play the audio for ten seconds, then restart it from the very beginning, playing it through to the end.
+In the above example we play the audio for ten seconds then restart it from the very beginning, playing it through to the end.
 
 ## Multiple sounds at once!
 
