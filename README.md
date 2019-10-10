@@ -21,7 +21,7 @@ All methods that interact directly with the audio playback and management can be
 
 This above code will create a new instance of the WavPlayer object, load in a file and play it to the end.
 
-You can choose to run an action on the CFWavPlayer instance at a given duration, using the `wait()` method. This is essentially a helper shortcut method to the CFML `sleep()` function.
+You can choose to run an action on the `CFWavPlayer` instance at a given duration, using the `wait()` method. This is essentially a helper shortcut method to the CFML `sleep()` function.
 
 ```
 player1 = WavBuilder
@@ -32,7 +32,7 @@ player1 = WavBuilder
     .stop();
 ```
 
-So, in the above example, we load a file, start playing it, and five seconds into it we stop.
+So, in the above example, we load a file, start playing it, and five seconds into it we stop the audio.
 
 We could use the `wait()` method to do other things:
 
@@ -47,7 +47,7 @@ player1 = WavBuilder
     .resume();
 ```
 
-here we play the loaded wav file, wait five seconds, pause it, wait another 1.5 seconds, then resume playing from where we ledt off.
+Here we play the loaded wav file, wait five seconds, pause it, wait another 1.5 seconds, then resume playing from where we left off. I know.. the power to control the wav is immensely invigorating.
 
 ## Jumping the playhead
 
@@ -61,6 +61,8 @@ player1 = WavBuilder
     .play();
 ```
 
+This can be useful to cut out any annoying introductions to songs. I mean, who wants to listen to a million bars of intro when you can just jump straight to the awesome guitar riff somewhere in the middle? (assuming you know the exact microsecond position of that guitar riff).
+
 ## Looping
 
 You can loop an audio file endlessly, should you wish too:
@@ -72,7 +74,7 @@ player1 = WavBuilder
     .loop();
 ```
 
-** Note that with the `loop()` method added to the chain you do not need to call the `play()` method.
+**Note that with the `loop()` method added to the chain you do not need to call the `play()` method.**
 
 To stop the loop, you would then just need to call:
 
