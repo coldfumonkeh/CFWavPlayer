@@ -94,6 +94,21 @@ player1 = WavBuilder
     .stop();
 ```
 
+## Restarting audio
+
+You can also restart the audio from the beginning:
+
+```
+player1 = WavBuilder
+    .new()
+    .file( './wav_audio.wav' )
+    .play()
+    .wait( 10000 )
+    .restart();
+```
+
+In the above example, we play the audio for ten seconds, then restart it from the very beginning, playing it through to the end.
+
 ## Multiple sounds at once!
 
 You can use `CFWavPlayer` to play multiple sounds at once through the browser. Because who doesn't like wav-induced headaches?
