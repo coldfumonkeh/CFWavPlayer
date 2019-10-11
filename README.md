@@ -1,5 +1,12 @@
 # CFWavPlayer - A CFML wrapper to load and play wav audio files within your application
 
+[![cfmlbadges](https://cfmlbadges.monkehworks.com/images/badges/made-with-cfml.svg)](https://cfmlbadges.monkehworks.com) 
+[![cfmlbadges](https://cfmlbadges.monkehworks.com/images/badges/compatibility-coldfusion-2018.svg)](https://cfmlbadges.monkehworks.com) 
+[![cfmlbadges](https://cfmlbadges.monkehworks.com/images/badges/compatibility-lucee-5.svg)](https://cfmlbadges.monkehworks.com) 
+[![cfmlbadges](https://cfmlbadges.monkehworks.com/images/badges/built-with-love.svg)](https://cfmlbadges.monkehworks.com) 
+[![cfmlbadges](https://cfmlbadges.monkehworks.com/images/badges/check-it-out.svg)](https://cfmlbadges.monkehworks.com) 
+[![cfmlbadges](https://cfmlbadges.monkehworks.com/images/badges/uses-badges.svg)](https://cfmlbadges.monkehworks.com) 
+
 I don't know why you'd want to use this, but you might do.. because, you know, wav files are cool.
 
 ## Create a new player
